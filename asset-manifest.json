@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/BuyIt/static/css/main.496227b0.css",
+    "main.js": "/BuyIt/static/js/main.9f0ec35b.js",
+    "static/media/Buyit.png": "/BuyIt/static/media/Buyit.01b72b2c85aa695d4f67.png",
+    "index.html": "/BuyIt/index.html",
+    "main.496227b0.css.map": "/BuyIt/static/css/main.496227b0.css.map",
+    "main.9f0ec35b.js.map": "/BuyIt/static/js/main.9f0ec35b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.496227b0.css",
+    "static/js/main.9f0ec35b.js"
+  ]
+}
