@@ -1,13 +1,192 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.navbar {
+  background-color: #131921;
+  padding: 20px;
+  font-family: "Merriweather", serif;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative; 
+  z-index: 10;
+}
+
+.navbar-logo {
+  height: 50px;
+  background-blend-mode: overlay;
+}
+
+.navlinks {
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff;
+  margin: 0 10px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.navbar-links {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-links a {
+  display: block;
+}
+
+.hamburger {
+  display: none;
+  font-size: 24px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.navbar-links.active {
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .navbar-links {
+    display: none;
+    width: 100%;
+    background-color: #131921;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    padding: 20px;
+    text-align: center;
+    z-index: 9;
+  }
+
+  .navbar-links a {
+    margin: 15px 0;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .navbar-links.active {
+    display: block;
+  }
+}
+
+#home-container{
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+}
+.landing-cards {
+  position: relative;
+  height: 500px;
+  margin: 10px;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+#card-1{
+ background-image: url('https://boldoutline.in/wp-content/uploads/2019/10/Web-Cover-82.jpg');
+ background-size: cover;
+ cursor: pointer;
+}
+#card-2{
+  background-image: url('https://thumbs.dreamstime.com/b/concept-grocery-shopping-home-delivery-app-filled-package-goods-decoration-wallpaper-desktop-poster-booklet-cover-298213803.jpg');
+  background-size: cover;
+  cursor: pointer;
+}
+#card-3{
+  background-image: url('https://wallpapers.com/images/hd/jewellery-background-2880-x-1800-dgixvilq78viyf9w.jpg');
+  background-size: cover;
+  cursor: pointer;
+}
+#card-4{
+  background-image: url('https://t4.ftcdn.net/jpg/03/64/41/07/360_F_364410756_Ev3WoDfNyxO9c9n4tYIsU5YBQWAP3UF8.jpg');
+  background-size: cover;
+  cursor: pointer;
+}
+#card-5{
+  background-image: url('https://media.istockphoto.com/id/864505242/photo/mens-clothing-and-personal-accessories.jpg?s=612x612&w=0&k=20&c=TaJuW3UY9IZMijRrj1IdJRwd6iWzXBlrZyQd1uyBzEY=');
+  background-size: cover;
+  cursor: pointer;
+}
+#card-6{
+  background-image: url('https://cms.landmarkshops.in/cdn-cgi/image/w=1232,q=85,fit=cover/LS-Fest/LS-new/HP_LS_Womenn_Desktop-1-18Sept2024A.jpg');
+  background-size: cover;
+  cursor: pointer;
+}
+.container{
+  margin-top: 10px;
+}
+.specification-container{
+  width: 70%;
+  margin: 50px auto;
+  height: 500px;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+}
+.specification-image{
+  width: 90%;
+}
+.title{
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 25px;
+}
+.description{
+  font-size: 15px;
+  font-weight: 450;
+}
+.right-container{
+  overflow: scroll;
+}
+
+.cart-text{
+  margin-left: 10px;
+}
+.cart-image{
+  height: 400px;
+}
+
+#card-1, #card-2, #card-3, #card-4, #card-5, #card-6 {
+  background-size: cover;
+  background-position: center;
+}
+
+.landing-cards:hover {
+  filter: grayscale(100%); 
+  transform: scale(1.05);
+}
+
+.card-content {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  right: 10px;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.5); 
+  border-radius: 5px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.landing-cards:hover .card-content {
+  opacity: 1;
+}
+
+.card-text {
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+}
+@media (max-width: 768px) {
+  #home-container {
+    grid-template-columns: 1fr; 
+  }
+
+  .landing-cards {
+    height: 200px;
+  }
 }
