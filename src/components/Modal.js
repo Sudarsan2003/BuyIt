@@ -24,12 +24,6 @@ function Modal({ title, body, onClose, onSave }) {
               onClick={onClose}>
               Close
             </button>
-            <button 
-              type="button" 
-              className="btn btn-primary" 
-              onClick={onSave}>
-              Save changes
-            </button>
           </div>
         </div>
       </div>

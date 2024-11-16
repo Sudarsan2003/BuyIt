@@ -185,10 +185,29 @@ width: 100%;
   gap: 20px;
   padding: 20px;
 }
-.products-container{
+.products-container {
     width: 80%;
     margin-left: 200px;
-}
+    padding: 20px;
+    margin-right: 20px;
+  }
+  
+  @media (max-width: 1024px) {
+    .products-container {
+      width: 90%;
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .products-container {
+      width: 100%;
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+  
 .landing-cards {
     position: relative;
     width: 100%;
