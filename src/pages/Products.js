@@ -60,7 +60,8 @@ function Products() {
   };
 
   return (
-    <div className="container">
+    <>
+    <div className='products-container'>
       <FormControl fullWidth margin="normal">
         <InputLabel>Category</InputLabel>
         <Select
@@ -101,7 +102,8 @@ function Products() {
           </Grid>
         ))}
       </Grid>
-    </div>
+      </div>
+      </>
   );
 }
 export default Products;

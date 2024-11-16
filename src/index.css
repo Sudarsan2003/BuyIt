@@ -1,7 +1,6 @@
 body {
   margin: 0;
 }
-
 .navbar {
   background-color: #131921;
   padding: 20px;
@@ -73,16 +72,13 @@ body {
   }
 }
 
-
-.container{
-  margin-top: 10px;
-}
 .specification-container{
   width: 70%;
   margin: 50px auto;
   height: 500px;
   display: grid;
   grid-template-columns: repeat(2,1fr);
+  border-radius: 20px;
 }
 .specification-image{
   width: 90%;
@@ -97,6 +93,9 @@ body {
 }
 .right-container{
   overflow: scroll;
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 10px;
 }
 
 .cart-text{
